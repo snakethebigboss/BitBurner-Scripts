@@ -4,7 +4,9 @@
 
 Determine the maximum possible profit you can earn using at most two transactions. A transaction is defined as buying and then selling one share of the stock. Note that you cannot engage in multiple transactions at once. In other words, you must sell the stock before you buy it again.
 
-If no profit can be made, then the answer should be 0 ```
+If no profit can be made, then the answer should be 0
+
+Algorithmic Trading III```
 
 function maxProfit(prices) {
   let n = prices.length;
@@ -45,3 +47,4 @@ export async function main(ns) {
   profit = maxProfit(prices)
   ns.tprint(profit);
 }
+
