@@ -27,7 +27,7 @@ export async function main(ns) {
         ns.print("Copying and running virus on " + server);
         await ns.scp(virus, server);
         killVirus(server);
-        var maxThreads = Math.floor(pRam / virusRamq);
+        var maxThreads = Math.floor(pRam / virusRam);
         ns.exec(virus, server, maxThreads, target);
     }
     
