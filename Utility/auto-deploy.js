@@ -33,7 +33,7 @@ export async function main(ns) {
         }
 
         if (ns.scriptRunning(virus, server)){
-            ns.scriptkill(virus, server);
+            ns.scriptKill(virus, server);
         }
 
         var maxThreads = Math.floor(ns.getServerMaxRam(server) / virusRam);
